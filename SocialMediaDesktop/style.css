@@ -1,0 +1,108 @@
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the default font family and background color for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3b2c2c;
+}
+
+/* Navbar styling: Flexbox for alignment, padding, and color */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3b2c2c;
+  padding: 10px 20px;
+  color: #ecf0f1;
+}
+
+/* User profile section in the navbar: Flexbox for alignment */
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+/* User profile image styling */
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Search bar styling */
+.search-bar {
+  width: 300px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Navigation links styling: Flexbox for alignment and spacing */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Styling for individual navigation links */
+.nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+/* Container styling: Flexbox for main layout */
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+/* Sidebar styling: Width, background color, padding, and border radius */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  color: #525151;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Dashboard styling: Flex property for flexible width and margin */
+.dashboard {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Metrics card styling: Background color, padding, margin, border radius, and shadow */
+.metrics {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Metrics header styling */
+.metrics h2 {
+  margin-bottom: 20px;
+}
+
+/* Media query for responsive design: Adjust flex direction and margins for smaller screens */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .dashboard {
+      margin-left: 0;
+  }
+}

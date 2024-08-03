@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="user-profile">
+      <img src="assets/user.jpg" alt="User Profile Picture">
+      <span>Arbab Aflaq</span>
+    </div>
+    <input type="text" class="search-bar" placeholder="Search...">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Analytics</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="quick-stats">
+        <h3>Quick Stats</h3>
+        <p>Followers: 1200</p>
+        <p>Engagement: 8.5%</p>
+        <p>Posts: 150</p>
+      </div>
+      <div class="notifications">
+        <h3>Notifications</h3>
+        <p>No new notifications</p>
+      </div>
+    </aside>
+
+    <main class="dashboard">
+      <section class="metrics">
+        <h2>Follower Growth</h2>
+        <canvas id="followerGrowthChart"></canvas>
+      </section>
+      <section class="metrics">
+        <h2>Engagement Rates</h2>
+        <canvas id="engagementRateChart"></canvas>
+      </section>
+      <section class="metrics">
+        <h2>Activity Timeline</h2>
+        <canvas id="activityTimelineChart"></canvas>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
